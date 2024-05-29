@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Restaurants</h1>
+
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-3 card m-2">
+        <p class="m-0"><%= restaurant.name %> @ <%= restaurant.address %></p>
+        <p class="m-0"><em><%= restaurant.category %></em></p>
+      </div>
+    <% end %>
+  </div>
+</div>
