@@ -1,1 +1,8 @@
-<%= render "form", restaurant: @restaurant %>
+<div class="container my-3">
+  <h1>Add a restaurant</h1>
+  <div class="my-3">
+    <%= render "form", restaurant: @restaurant %>
+  </div>
+
+  <%= link_to 'Back to all restaurants', restaurants_path, class: 'btn btn-secondary' %>
+</div>
